@@ -63,6 +63,12 @@ button {
   background-color: transparent;
 }
 
+.button-container {
+  display: flex;
+  align-items: center; 
+  gap: 30px; 
+}
+
 input:focus, textarea:focus, select:focus {
   outline: none;
 }

@@ -14,34 +14,40 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
+      title: "Music Blog HTML & CSS",
       description: "Design & Development",
       imgUrl: projImg1,
+      href: "https://melomania-viva.netlify.app/",
     },
     {
-      title: "Business Startup",
+      title: "Crypto Dashboard API",
       description: "Design & Development",
       imgUrl: projImg2,
+      href: "https://crypto-dashboard-bice.vercel.app/",
     },
     {
-      title: "Business Startup",
+      title: "Sabujcha Landing Page",
       description: "Design & Development",
       imgUrl: projImg3,
+      href: "https://sabujcha-jjk.netlify.app/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "NOUS CIMS Web",
+      description: "Educamas Final Project",
       imgUrl: projImg4,
+      href: "https://genero-front-six.vercel.app/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Pokedex API",
+      description: "Development",
       imgUrl: projImg5,
+      href: "https://xpokedex-api.netlify.app/",
     },
     {
-      title: "Business Startup",
+      title: "Inventory App JAVA",
       description: "Design & Development",
       imgUrl: projImg6,
+      href: "https://github.com/karolgalindo02/kss_tech",
     },
   ];
 
@@ -54,11 +60,11 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>In the world of technology I have developed web projects with SCRUM methodology, responsive design and the use of Frameworks such as REACT</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Recent</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="second">Tab 2</Nav.Link>

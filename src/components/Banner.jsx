@@ -16,7 +16,7 @@ export const Banner = () => {
   const period = 2000;
   
   const handleDownload = () => {
-    const fileId = '1KBTKB9I3-FEV3qkh53SN6wwHlchTHVU7';
+    const fileId = '1FmWReMiiD8XhxWNDtV8ov3bfLaBBK02W';
     const downloadLink = `https://drive.google.com/uc?id=${fileId}`;
     window.location.href = downloadLink;
   }
@@ -62,10 +62,13 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Karol`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-                  <button className="download" onClick={handleDownload}>Download CV <ArrowBarDown size={25} /></button>
+                <h1>{`Hi! I'm Karol`} <br/><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Front End Web Developer and IT Technologist in training with passion for UX/UI design and use of SCRUM Methodology.
+                  I am a responsible, creative and proactive person with autonomous learning, collaborative work.</p>
+              <div className="button-container">
+                <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <button className="download" onClick={handleDownload}>Download CV <ArrowBarDown size={25} /></button>
+              </div>
               </div>}
             </TrackVisibility>
           </Col>
